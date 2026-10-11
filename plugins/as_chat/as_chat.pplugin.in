@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${AS_CHAT_VERSION}",
+	"name": "as_chat",
+	"description": "Admin chat for the admin_system plugin, ported from the Pisex Metamod module '[AS] Chat'. A team-chat message that starts with '@' from a player holding '@admin/chat' is not broadcast as a team message; it is delivered as one non-team chat line to every connected, authenticated non-bot admin that has '@admin/chat', formatted with the 'AdminChat' phrase of the admin system (admin_system/translations/admin_system.phrases.txt). Every other chat message passes through untouched. No exported methods.",
+	"author": "Pisex, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/as_chat",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "admin_system",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
